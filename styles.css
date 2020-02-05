@@ -1,0 +1,42 @@
+div {
+	width: 700px;
+	height: 500px;
+	border: 2px solid blue;
+	color: #fff;
+	font-size: 50px;
+	line-height: 100px;
+	margin: auto;
+}
+
+article {
+	width: 200px;
+	height: 100px;
+	background: crimson;
+	text-align: center;
+	margin: 10px;
+}
+
+
+.contenedor {
+	display: flex;
+
+}
+
+.item {
+
+}
+
+.uno {
+	align-self: flex-end;	
+}
+
+.dos {
+	align-self: flex-start;	
+	
+}
+
+.tres {
+	align-self: stretch;	
+	height: auto;
+
+}

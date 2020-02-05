@@ -1,0 +1,83 @@
+Para el contendor:
+
+display: flex;
+flex-direction: row;(por defecto)
+flex-direction: row-reverse;
+flex-direction: column;
+flex-direction: column-reverse;
+
+//----Controlar la direccion de los elementos cuando estos superen el ancho del contenedor
+flex-wrap: wrap;
+flex-wrap: wrap-reverse;//invierte las posiciones
+
+
+//---Alinear los elementos en forma horizontal
+justify-content: flex-start;(por defecto)
+
+justify-content: flex-end; //envia todo al final
+
+justify-content: center; //envia todo al centro
+
+justify-content: space-around; //Espacio alrededor de cada elemento
+
+
+//Deja el primer elemento al principio y el ultimo elemento al final 
+//y distribuye espacios alrededor de los otros elementos
+justify-content: space-between; 
+
+
+//---Alinear los elementos de manera vertical
+align-items: flex-start;(por defecto)
+align-items: flex-end; //envia al final
+align-items: center; //lo centra
+align-items: baseline; //alinea la base de los textos de los elementos
+align-items: stretch; //ocupa todo el ancho del contenedor
+
+
+//---Alinea los elementos en forma vertical pero cuando funciona flex-wrap
+align-content: flex-start;(por defecto)
+align-content: flex-end; //envia al final
+align-content: center; //lo centra
+align-content: baseline; //alinea la base de los textos de los elementos
+align-content: stretch; //ocupa todo el ancho del contenedor
+
+
+//----Forma abreviada de flex-direction y flex-wrap
+flex-flow: propiedad flex-direction, propiedad flex-wrap;
+
+
+
+
+
+Para los item:
+//---Indica el orden en el cual van a estar cada elemento
+order: 3;
+
+//----Establecemos el crecimiento que tiene cada elemento
+flex-grow: 1; //le digo que ocupe todo el lugar que resta
+flex-grow: 2; //le digo que ocupe el doble del espacio disponible
+flex-grow: 3; //le digo que ocupe el triple del espacio disponible
+flex-grow: n; //le digo que ocupe el n veces del espacio disponible(n seria el valor numerico)
+
+
+//----Reducimos los elementos
+flex-shrink: 2; //le reducimos por la mitad del tamanho
+flex-shrink: 3;
+flex-shrink: 4;
+flex-shrink: n;
+
+//---Establece el tamanho base antes que se distribuya el espacio de los elementos en el contenedor
+// Depende del flujo en cual estan los elementos, si esta en forma de columna cambia el alto
+//y si esta en forma de filas establece el ancho
+flex-basis: 50px; 
+
+
+//alinea cada elemento de manera vertical
+align-self: flex-end;
+align-self: flex-start;
+align-self: center;	
+
+
+
+
+
